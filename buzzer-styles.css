@@ -1,13 +1,20 @@
 body{
 	margin: 0;
+	font-family: 'Acme', sans-serif;
+	font-size: 24px;
+	color: #fff;
 }
 
-div{
+.buzzer{
 	float: left;
 	width: 33.33%;
 	height: 100vh;
-  -webkit-transition: width .15s; /* Safari */
-  transition: width .15s;
+	-webkit-transition: width .15s; /* Safari */
+	transition: width .15s;
+}
+
+.press-key-indicator{
+	margin: 8px;
 }
 
 .left{

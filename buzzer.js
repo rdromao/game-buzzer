@@ -19,6 +19,7 @@ function resetBuzzer(){
 	$('.left').css("background-color", "#FFCDD2");
 	$('.middle').css("background-color", "#BBDEFB");
 	$('.right').css("background-color", "#C8E6C9");
+  $('.press-key-indicator').show();
   buzzed = false;
 }
 
@@ -31,6 +32,7 @@ window.onkeyup = function(e) {
         $('.left').css("width", "98%");
         $('.middle').css("width", "1%");
         $('.right').css("width", "1%");
+        $('.press-key-indicator').hide();
         countdown = setTimeout(resetBuzzer, 5000);
     }else if (key == 72 && !buzzed) {
     		buzzed = true;
@@ -38,6 +40,7 @@ window.onkeyup = function(e) {
         $('.left').css("width", "1%");
         $('.middle').css("width", "98%");
         $('.right').css("width", "1%");
+        $('.press-key-indicator').hide();
         countdown = setTimeout(resetBuzzer, 5000);
     }else if (key == 76 && !buzzed) {
     		buzzed = true;
@@ -45,6 +48,7 @@ window.onkeyup = function(e) {
         $('.left').css("width", "1%");
         $('.middle').css("width", "1%");
         $('.right').css("width", "98%");
+        $('.press-key-indicator').hide();
         countdown = setTimeout(resetBuzzer, 5000);
     }else if (key == 27 && buzzed){
     		killcountdown();

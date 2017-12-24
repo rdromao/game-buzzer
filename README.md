@@ -5,7 +5,7 @@ Web based, same keyboard, game buzzer.
   <a href="https://imgflip.com/gif/21n3lu"><img src="https://i.imgflip.com/21n3lu.gif" title="made at imgflip.com"/></a>
 </p>
 
-Just press "A", "H" or "L" and a color will lock/buzz so that team gets the turn (for 5 seconds).
+Just press the color key and it will lock/buzz so that team gets the turn (for 5 seconds).
 
 You can also hit Escape to cancel a buzz.
 

@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+}
+
+div{
+	float: left;
+	width: 33.33%;
+	height: 100vh;
+  -webkit-transition: width .15s; /* Safari */
+  transition: width .15s;
+}
+
+.left{
+	background-color: #FFCDD2;
+}
+.middle{
+	background-color: #BBDEFB;
+}
+.right{
+	background-color: #C8E6C9;
+}

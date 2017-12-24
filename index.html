@@ -4,18 +4,52 @@
 		<meta charset="UTF-8">
 		<title>Web based game buzzer</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Acme|Roboto" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="buzzer-styles.css?v=201712241439">
 	</head>
 	<body>
-		<div class="buzzer left">
+		<div class="settings">
+			<span class="clickable">Settings</span>
+			<div class="settings-list-container">
+				<div class="settings-list">
+					<div class="setting-buzzers-amount">
+						<div class="setting-name">
+							Buzzer amount
+						</div>
+						<div class="setting-value">
+							<input type="number" name="buzzer-amount" min="1" max="5" value="5">
+						</div>
+					</div>
+					<div class="setting-buzz-duration">
+						<div class="setting-name">
+							Buzzer duration
+						</div>
+						<div class="setting-value">
+							<input type="number" name="buzz-duration" min="1" max="30" value="5">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="buzzer leftmost">
 			<p class="press-key-indicator">Press "A"</p>
 		</div>
+		<div class="buzzer left">
+			<p class="press-key-indicator">Press "D"</p>
+		</div>
 		<div class="buzzer middle">
-			<p class="press-key-indicator">Press "H"</p>
+			<p class="press-key-indicator">Press "G"</p>
 		</div>
 		<div class="buzzer right">
+			<p class="press-key-indicator">Press "J"</p>
+		</div>
+		<div class="buzzer rightmost">
 			<p class="press-key-indicator">Press "L"</p>
+		</div>
+
+		<div class="copyright">
+			<a href="https://github.com/rdromao/game-buzzer">rdromao</a>
 		</div>
 		<script type="text/javascript" src="buzzer.js?v=201712241453"></script>
 	</body>
